@@ -85,7 +85,8 @@
 </head>
 
 <body>
-    This experiment plays with the Color extension and the Linear Algebra extensions
+    <p>This experiment plays with the Color extension and the Linear Algebra extensions</p>
+    <p><a href="https://github.com/maludwig/js-linear-algebra">GitHub Repo</a></p>
 	<canvas id="whiteboard"></canvas>
 	<div id="overlay"></div>
 </body>
