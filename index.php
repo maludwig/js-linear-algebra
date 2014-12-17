@@ -71,6 +71,7 @@
                     $("body").css("background","white");
                 }
 			});
+            $("#overlay").css({ height: $("body").innerHeight()});
 		});
 		
 		function drawDot(x,y) {
