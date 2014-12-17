@@ -9,7 +9,7 @@
     <script src="linearalgebra-1.3.js"></script>
     <script src="jquery-linearalgebra-1.0.js"></script>
 	<script type="text/javascript">
-		var ctx, cStroke = new Color("#AAF");
+		var ctx, cStroke = new Color("#AAF").fadeout(0.9);
         var ln = new Line(Point.ORIGIN,1,1);
         var ln2 = new Line(new Point(450,450),1,-1);
         var ln3 = new Line(new Point(450,450),1,0);
@@ -57,6 +57,7 @@
                     var pt = ptPage.subtract(vecOffset);
                     cStroke = cStroke.spin(1);
                     ctx.strokeStyle = cStroke.toString();
+                    ctx.fillStyle = cStroke.toString();
                     drawDot(pt);
                     var pt2 = ln.reflect(pt);
                     drawDot(pt2);
